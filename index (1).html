@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090d18">
+<meta name="color-scheme" content="dark">
+<meta name="application-name" content="BCA Command Center">
+<meta name="description" content="BCA Command Center is a study hub for IGNOU BCA_NEWOL Semester 1, featuring syllabus tracking, study resources, and June and December previous-year question papers.">
+<meta name="keywords" content="IGNOU BCA, BCA_NEWOL, IGNOU BCA Semester 1, BCA syllabus, IGNOU previous year question papers, IGNOU PYQ, BCS-011, BCS-111, BCS-012, BEGLA-136, BEVAE-181">
+<meta name="author" content="BCA Command Center">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+<title>BCA Command Center | IGNOU BCA Semester 1</title>
+
+<!-- Open Graph: social sharing preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BCA Command Center">
+<meta property="og:title" content="BCA Command Center | IGNOU BCA Semester 1">
+<meta property="og:description" content="Your IGNOU BCA_NEWOL Semester 1 study hub: track your syllabus, explore study resources, and access previous-year question papers.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BCA Command Center — IGNOU BCA Semester 1 study hub and previous-year question papers">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter / X large image preview -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BCA Command Center | IGNOU BCA Semester 1">
+<meta name="twitter:description" content="Track your IGNOU BCA_NEWOL Semester 1 syllabus and access study resources and previous-year question papers.">
+<meta name="twitter:image" content="og-image.png">
+<meta name="twitter:image:alt" content="BCA Command Center — IGNOU BCA Semester 1 study hub">
+
+<style>
+:root{
+--bg:#090d18;--panel:#111b2c;--panel2:#17243a;
+--line:#26354b;--text:#edf3ff;--muted:#93a2ba;
+--blue:#70aaff;--cyan:#53d7e8;--violet:#a78bfa;
+--green:#43d9a3;
+}
+*{box-sizing:border-box}
+body{
+margin:0;background:
+radial-gradient(ellipse at 12% 0%,#1a3152 0,transparent 34%),
+radial-gradient(ellipse at 90% 10%,#292047 0,transparent 28%),var(--bg);
+color:var(--text);font:15px/1.55 Inter,system-ui,sans-serif
+}
+button,input,select{font:inherit}
+.app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.side{
+height:100vh;position:sticky;top:0;padding:22px 15px;
+border-right:1px solid var(--line);background:#090d18dd;
+backdrop-filter:blur(18px);display:flex;flex-direction:column
+}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 30px}
+.logo{
+width:38px;height:38px;border-radius:12px;display:grid;
+place-items:center;background:linear-gradient(135deg,#438cff,#8759e9);
+font-weight:900
+}
+.brand small{display:block;color:var(--muted);font-size:11px}
+.navlabel{color:#70809a;font-size:10px;letter-spacing:1.6px;padding:8px 12px}
+.nav{display:grid;gap:5px}
+.nav button{
+border:0;background:transparent;color:var(--muted);text-align:left;
+padding:11px;border-radius:10px;cursor:pointer
+}
+.nav button:hover,.nav button.active{background:#213653;color:white}
+.sidefoot{
+margin-top:auto;border:1px solid var(--line);background:var(--panel);
+padding:14px;border-radius:13px
+}
+.sidefoot small{color:var(--muted)}
+.sidefoot b{display:block;margin:5px 0}
+main{max-width:1500px;width:100%;padding:28px clamp(15px,3vw,42px) 55px;margin:auto}
+.top{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:25px}
+.eyebrow{color:var(--cyan);font-size:10px;letter-spacing:1.7px;font-weight:800}
+h1{font-size:clamp(26px,3vw,36px);line-height:1.15;margin:5px 0}
+.muted{color:var(--muted);margin:0}
+.btn,select{
+border:1px solid var(--line);background:var(--panel);
+color:var(--muted);border-radius:10px;padding:9px 12px;cursor:pointer
+}
+.btn:hover{border-color:var(--blue);color:white}
+.hero{
+padding:26px;border:1px solid #41628d66;border-radius:21px;
+background:linear-gradient(115deg,#24477999,#4c357b77),#111b2c;
+position:relative;overflow:hidden;margin-bottom:17px
+}
+.heroin{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.hero h2{font-size:26px;margin:6px 0}
+.hero p{max-width:650px;color:#c3d0e4;margin:0}
+.hstats{display:flex;gap:24px;margin-top:19px;flex-wrap:wrap}
+.hstats b{display:block;font-size:20px}
+.hstats span{font-size:11px;color:#b4c4dc}
+.ring{
+width:112px;height:112px;flex:none;border-radius:50%;
+display:grid;place-items:center;
+background:conic-gradient(var(--cyan) var(--p,0%),#ffffff20 0);
+position:relative
+}
+.ring:before{content:"";position:absolute;inset:9px;border-radius:50%;background:#1b3150}
+.ring div{position:relative;text-align:center}
+.ring b{font-size:23px;display:block}
+.ring small{font-size:9px;color:#b8c8df}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:17px}
+.card,.panel{
+border:1px solid var(--line);border-radius:16px;
+background:linear-gradient(145deg,#152239,#101827);padding:16px
+}
+.card small{color:var(--muted)}
+.card b{display:block;font-size:25px;margin:8px 0 0}
+.grid{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-bottom:22px}
+.panel h3{font-size:15px;margin:0 0 15px}
+.pr{display:grid;grid-template-columns:90px 1fr 36px;gap:10px;align-items:center;margin:15px 0;font-size:12px}
+.track{height:8px;border-radius:9px;background:#2a3950;overflow:hidden}
+.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--violet));border-radius:9px;transition:width .3s}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.date{background:#101a2a;border:1px solid var(--line);border-radius:9px;text-align:center;padding:9px 2px}
+.date small{display:block;color:var(--muted);font-size:9px}
+.focus{margin-top:13px;padding:13px;border-radius:12px;background:#243b5a88;border:1px solid #70aaff33}
+.focus p{font-size:12px;color:var(--muted);margin:4px 0 10px}
+.section{display:flex;justify-content:space-between;align-items:end;margin:28px 0 13px;gap:10px}
+.section h2{margin:0;font-size:21px}
+.section p{margin:3px 0 0;color:var(--muted);font-size:12px}
+.toolbar,.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.search{flex:1;min-width:180px;position:relative}
+.search input{
+width:100%;padding:11px 12px 11px 35px;background:#111b2c;
+border:1px solid var(--line);border-radius:10px;color:white;outline:none
+}
+.search:before{content:"⌕";position:absolute;left:12px;top:4px;color:var(--muted);font-size:22px}
+.tab{
+border:1px solid var(--line);background:#111b2c;color:var(--muted);
+padding:8px 12px;border-radius:9px;cursor:pointer;font-size:12px
+}
+.tab.active{background:#24436d;color:white;border-color:#5484c1}
+.units{display:grid;gap:9px}
+.unit{border:1px solid var(--line);border-radius:14px;background:#101a2a;overflow:hidden}
+.unit summary{
+list-style:none;cursor:pointer;display:flex;align-items:center;gap:11px;padding:13px
+}
+.unit summary::-webkit-details-marker{display:none}
+.un{
+width:36px;height:36px;border-radius:10px;background:#243a59;
+color:#acd0ff;display:grid;place-items:center;font-size:11px;
+font-weight:800;flex:none
+}
+.ut{flex:1;min-width:0}
+.ut b{display:block;font-size:13px}
+.ut small{color:var(--muted);font-size:10px}
+.um{font-size:11px;color:var(--muted);white-space:nowrap}
+.unit[open] .arrow{transform:rotate(180deg)}
+.arrow{color:var(--muted);transition:.2s}
+.ubody{padding:0 15px 14px 61px}
+.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px}
+.topic{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#c8d3e3}
+.topic input{accent-color:#70aaff;margin-top:3px}
+.topic.checked span{color:#74849c;text-decoration:line-through}
+.ufoot{
+border-top:1px solid var(--line);margin-top:12px;padding-top:10px;
+display:flex;justify-content:space-between;align-items:center;gap:10px
+}
+.ufoot small{color:var(--muted)}
+.mark{
+border:1px solid #43d9a355;background:#43d9a311;color:var(--green);
+border-radius:8px;padding:7px 10px;font-size:11px;cursor:pointer
+}
+.empty{text-align:center;padding:30px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
+.pyqgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.pyq{
+display:flex;flex-direction:column;gap:7px;padding:13px;
+border:1px solid var(--line);border-radius:11px;background:#101a2a
+}
+.pyq b{font-size:12px}
+.pyq small{color:var(--muted);font-size:11px;min-height:32px}
+.pyq a{color:#9bc5ff;font-size:11px;text-decoration:none}
+.pyq a:hover{text-decoration:underline}
+.footer{text-align:center;color:#65748d;font-size:11px;padding:30px 0}
+.toast{
+position:fixed;right:20px;bottom:20px;background:#203a5a;
+border:1px solid #5078a9;padding:11px 15px;border-radius:10px;
+opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none
+}
+.toast.show{opacity:1;transform:none}
+.modalbg{
+display:none;position:fixed;inset:0;background:#000a;z-index:9;
+place-items:center;padding:15px
+}
+.modalbg.show{display:grid}
+.modal{background:#142239;border:1px solid var(--line);border-radius:16px;padding:20px;max-width:380px}
+.modal p{color:var(--muted);font-size:13px}
+.modal button{margin-right:6px}
+@media(max-width:950px){
+.stats{grid-template-columns:repeat(2,1fr)}
+.grid{grid-template-columns:1fr}
+.pyqgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+.app{display:block}
+.side{
+height:auto;position:sticky;z-index:5;flex-direction:row;
+align-items:center;justify-content:space-between;padding:9px 12px;
+border-right:0;border-bottom:1px solid var(--line)
+}
+.brand{padding:0}
+.brand small,.navlabel,.sidefoot{display:none}
+.nav{display:flex;overflow-x:auto}
+.nav button{padding:9px}
+.nav button span:last-child{display:none}
+.top{align-items:flex-start}
+.hero{padding:18px}
+.heroin{align-items:flex-start}
+.ring{width:80px;height:80px}
+.ring b{font-size:18px}
+.hstats{gap:13px}
+.hstats b{font-size:17px}
+.stats{gap:8px}
+.card{padding:12px}
+.card b{font-size:21px}
+.ubody{padding:0 12px 12px}
+.topics{grid-template-columns:1fr}
+.um{font-size:10px}
+.section{align-items:flex-start}
+.timeline{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){.pyqgrid{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+<div class="app">
+
+<aside class="side">
+ <div class="brand">
+  <div class="logo">B</div>
+  <div><b>BCA Command Center</b><small>Semester 1 · 2026</small></div>
+ </div>
+
+ <div>
+  <div class="navlabel">WORKSPACE</div>
+  <nav class="nav">
+   <button class="active" data-go="overview">▦ <span>Overview</span></button>
+   <button data-go="syllabus">☷ <span>Syllabus</span></button>
+   <button data-filter="BCS-111">⌘ <span>BCS-111</span></button>
+   <button data-filter="BCS-012">∑ <span>BCS-012</span></button>
+   <button data-filter="BEGLA-136">✎ <span>BEGLA-136</span></button>
+   <button data-filter="BEVAE-181">◈ <span>BEVAE-181</span></button>
+   <button data-go="pyqs">▤ <span>PYQs</span></button>
+  </nav>
+ </div>
+
+ <div class="sidefoot">
+  <small>FIRST EXAM COUNTDOWN</small>
+  <b id="countdown">Loading…</b>
+  <small>BCS-111 · 12 December 2026</small>
+ </div>
+</aside>
+
+<main>
+
+<header class="top">
+ <div>
+  <div class="eyebrow">IGNOU · BCA_NEWOL</div>
+  <h1>Your Semester, Under Control.</h1>
+  <p class="muted">Your complete Semester 1 study workspace.</p>
+ </div>
+ <button class="btn" id="reset">↺ Reset progress</button>
+</header>
+
+<section class="hero" id="overview">
+ <div class="heroin">
+  <div>
+   <div class="eyebrow">YOUR STUDY COMMAND CENTER</div>
+   <h2>Small steps. Strong preparation.</h2>
+   <p>Track all 58 units, monitor your progress, and practise with previous-year question papers.</p>
+   <div class="hstats">
+    <div><b id="unitsDone">0 / 58</b><span>Units completed</span></div>
+    <div><b id="topicsDone">0</b><span>Topics checked</span></div>
+    <div><b>4</b><span>Theory subjects</span></div>
+   </div>
+  </div>
+  <div class="ring" id="ring">
+   <div><b id="overall">0%</b><small>COMPLETE</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="card"><small>BCS-111 / BCS-011</small><b id="p111">0%</b><small id="c111">0 of 12 units completed</small></div>
+ <div class="card"><small>BCS-012</small><b id="p012">0%</b><small id="c012">0 of 16 units completed</small></div>
+ <div class="card"><small>BEGLA-136</small><b id="p136">0%</b><small id="c136">0 of 16 units completed</small></div>
+ <div class="card"><small>BEVAE-181</small><b id="p181">0%</b><small id="c181">0 of 14 units completed</small></div>
+</section>
+
+<section class="stats">
+ <div class="card"><small>Next exam</small><b>12 Dec</b><small>BCS-111 · Computer Basics</small></div>
+ <div class="card"><small>Days to first exam</small><b id="days">—</b><small>Keep your daily momentum</small></div>
+ <div class="card"><small>June 2025 papers</small><b>4</b><small>Question papers available</small></div>
+ <div class="card"><small>December 2025 papers</small><b>4</b><small>Question papers available</small></div>
+</section>
+
+<section class="grid">
+ <div class="panel">
+  <h3>Subject completion</h3>
+  <div id="bars"></div>
+ </div>
+
+ <div class="panel">
+  <h3>Exam timeline</h3>
+  <div class="timeline">
+   <div class="date"><small>BCS-111</small><b>12 Dec</b></div>
+   <div class="date"><small>MATHS</small><b>15 Dec</b></div>
+   <div class="date"><small>ENGLISH</small><b>02 Jan</b></div>
+   <div class="date"><small>EVS</small><b>13 Jan</b></div>
+  </div>
+  <div class="focus">
+   <div class="eyebrow">CURRENT PRIORITY</div>
+   <b>All four subjects</b>
+   <p>Complete your units, revise important topics and practise previous-year questions.</p>
+   <button class="btn" data-jump="syllabus">Open syllabus →</button>
+  </div>
+ </div>
+</section>
+
+<section id="syllabus">
+ <div class="section">
+  <div>
+   <div class="eyebrow">58 UNITS · 4 THEORY SUBJECTS</div>
+   <h2>Explore your syllabus</h2>
+   <p>Expand a unit to view its subtopics. Tick topics as you learn them.</p>
+  </div>
+  <button class="btn" id="expand">＋ Expand all</button>
+ </div>
+
+ <div class="toolbar">
+  <div class="search">
+   <input id="search" placeholder="Search units or subtopics…" type="search">
+  </div>
+  <select id="status">
+   <option value="all">All units</option>
+   <option value="incomplete">Not completed</option>
+   <option value="complete">Completed</option>
+  </select>
+  <select id="sort">
+   <option value="default">Default order</option>
+   <option value="progress">Most completed</option>
+   <option value="least">Least completed</option>
+  </select>
+ </div>
+
+ <div class="tabs">
+  <button class="tab active" data-subject="all">All subjects · 58</button>
+  <button class="tab" data-subject="BCS-111">BCS-111 · 12</button>
+  <button class="tab" data-subject="BCS-012">BCS-012 · 16</button>
+  <button class="tab" data-subject="BEGLA-136">BEGLA-136 · 16</button>
+  <button class="tab" data-subject="BEVAE-181">BEVAE-181 · 14</button>
+ </div>
+
+ <div class="units" id="units"></div>
+</section>
+
+<section id="pyqs">
+ <div class="section">
+  <div>
+   <div class="eyebrow">QUESTION PAPER LIBRARY</div>
+   <h2>Previous-year question papers</h2>
+   <p>Open or download the original question papers.</p>
+  </div>
+ </div>
+
+ <div class="panel" style="margin-bottom:12px">
+  <h3>June 2025 Term-End Examination</h3>
+  <div class="pyqgrid">
+   <div class="pyq">
+    <b>BCS-011 / BCS-111</b>
+    <small>Computer Basics and PC Software</small>
+    <a href="papers/June-2025/BCS-011_BCS-111_June-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2025/BCS-011_BCS-111_June-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BCS-012</b>
+    <small>Basic Mathematics</small>
+    <a href="papers/June-2025/BCS-012_June-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2025/BCS-012_June-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEGLA-136</b>
+    <small>English at the Workplace</small>
+    <a href="papers/June-2025/BEGLA-136_June-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2025/BEGLA-136_June-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEVAE-181</b>
+    <small>Environmental Studies</small>
+    <a href="papers/June-2025/BEVAE-181_June-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2025/BEVAE-181_June-2025.pdf">Download PDF ↓</a>
+   </div>
+  </div>
+ </div>
+
+ <div class="panel">
+  <h3>December 2025 Term-End Examination</h3>
+  <div class="pyqgrid">
+   <div class="pyq">
+    <b>BCS-011 / BCS-111</b>
+    <small>Computer Basics and PC Software</small>
+    <a href="papers/December-2025/BCS-011_BCS-111_December-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2025/BCS-011_BCS-111_December-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BCS-012</b>
+    <small>Basic Mathematics</small>
+    <a href="papers/December-2025/BCS-012_December-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2025/BCS-012_December-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEGLA-136</b>
+    <small>English at the Workplace</small>
+    <a href="papers/December-2025/BEGLA-136_December-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2025/BEGLA-136_December-2025.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEVAE-181</b>
+    <small>Environmental Studies</small>
+    <a href="papers/December-2025/BEVAE-181_December-2025.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2025/BEVAE-181_December-2025.pdf">Download PDF ↓</a>
+   </div>
+  </div>
+ </div>
+  <div class="panel" style="margin-bottom:12px">
+   <h3>June 2024 Term-End Examination</h3>
+   <div class="pyqgrid">
+   <div class="pyq">
+    <b>BCS-011 / BCS-111</b>
+    <small>Computer Basics and PC Software</small>
+    <a href="papers/June-2024/BCS-011_BCS-111_June-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2024/BCS-011_BCS-111_June-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BCS-012</b>
+    <small>Basic Mathematics</small>
+    <a href="papers/June-2024/BCS-012_June-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2024/BCS-012_June-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEGLA-136</b>
+    <small>English at the Workplace</small>
+    <a href="papers/June-2024/BEGLA-136_June-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2024/BEGLA-136_June-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEVAE-181</b>
+    <small>Environmental Studies</small>
+    <a href="papers/June-2024/BEVAE-181_June-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/June-2024/BEVAE-181_June-2024.pdf">Download PDF ↓</a>
+   </div>
+   </div>
+  </div>
+
+  <div class="panel">
+   <h3>December 2024 Term-End Examination</h3>
+   <div class="pyqgrid">
+   <div class="pyq">
+    <b>BCS-011 / BCS-111</b>
+    <small>Computer Basics and PC Software</small>
+    <a href="papers/December-2024/BCS-011_BCS-111_December-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2024/BCS-011_BCS-111_December-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BCS-012</b>
+    <small>Basic Mathematics</small>
+    <a href="papers/December-2024/BCS-012_December-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2024/BCS-012_December-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEGLA-136</b>
+    <small>English at the Workplace</small>
+    <a href="papers/December-2024/BEGLA-136_December-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2024/BEGLA-136_December-2024.pdf">Download PDF ↓</a>
+   </div>
+   <div class="pyq">
+    <b>BEVAE-181</b>
+    <small>Environmental Studies</small>
+    <a href="papers/December-2024/BEVAE-181_December-2024.pdf" target="_blank">View PDF ↗</a>
+    <a download href="papers/December-2024/BEVAE-181_December-2024.pdf">Download PDF ↓</a>
+   </div>
+   </div>
+  </div>
+
+</section>
+
+<div class="footer">
+ BCA Command Center · Your progress is saved automatically in this browser.<br>
+ BCS-011 and BCS-111 are displayed as one course entry.<br>
+ Checklist subtopics are study aids. Verify exact examinable coverage against official IGNOU study blocks.
+</div>
+
+</main>
+</div>
+
+<div class="toast" id="toast">Progress saved</div>
+
+<div class="modalbg" id="modal">
+ <div class="modal">
+  <h3>Reset all progress?</h3>
+  <p>This clears every checked topic and completed unit saved in this browser. This cannot be undone.</p>
+  <button class="btn" id="cancel">Cancel</button>
+  <button class="btn" id="confirm">Reset progress</button>
+ </div>
+</div>
+
+<script>
+const U = [
+["BCS-111",1,"Block 1 · Computer Fundamentals","Computer — Their Origin and Applications",["Meaning and definition of a computer","Characteristics of computers","History and evolution of computers","Early calculating devices: Abacus, Napier's Bones, Pascaline and Leibniz Calculator","Difference Engine and Analytical Engine","Generations of computers: first to fifth","Classification: analog, digital and hybrid computers","Microcomputers, minicomputers, mainframes and supercomputers","Applications of computers","Advantages and limitations of computers"]],
+["BCS-111",2,"Block 1 · Computer Fundamentals","Functioning of a Computer",["Basic computer organisation","Input–process–output cycle","Functional units of a computer","CPU: ALU, Control Unit and registers","Machine cycle: fetch, decode, execute and store","Data and instructions","Number systems: binary, decimal, octal and hexadecimal","Number-system conversions","Data representation: bits and bytes","ASCII and Unicode"]],
+["BCS-111",3,"Block 1 · Computer Fundamentals","Memory System",["Meaning and importance of computer memory","Memory hierarchy","Primary memory: RAM and ROM","SRAM and DRAM","PROM, EPROM and EEPROM","Cache memory and registers","Secondary memory: hard disk and SSD","Optical storage, USB flash drives and memory cards","Storage capacity: bit, byte, KB, MB, GB and TB","Volatile and non-volatile memory"]],
+["BCS-111",4,"Block 1 · Computer Fundamentals","I/O Devices and Their Functions",["Meaning of input and output devices","Keyboard and mouse","Scanner, joystick and light pen","Barcode reader","OCR, OMR and MICR","Microphone and webcam","Monitor and display devices","Printers: impact and non-impact","Plotter, speakers and projector","Touchscreen, ports and interfaces"]],
+["BCS-111",5,"Block 1 · Computer Fundamentals","My Personal Computer",["Introduction to personal computers","Desktop and laptop computers","Main components of a PC","Motherboard, CPU and processor","RAM and storage devices","Power supply unit","Expansion slots and cards","Computer peripherals","Booting: cold booting and warm booting","BIOS/UEFI","Connecting and configuring devices","Basic computer maintenance and common hardware problems"]],
+["BCS-111",6,"Block 2 · Software and Operating Systems","Software Evolution",["Meaning of software","Hardware versus software","System software","Application software","Utility software","Operating systems and device drivers","Language translators: assembler, compiler and interpreter","Firmware","Open-source and proprietary software","Freeware and shareware","Software development and evolution"]],
+["BCS-111",7,"Block 2 · Software and Operating Systems","Operating System Concepts",["Meaning and functions of an operating system","Batch operating system","Multiprogramming and multitasking","Time-sharing and multiprocessing","Real-time and distributed operating systems","Single-user and multi-user systems","Process management","Memory management","File and device management","CLI and GUI","Files, folders and directories","Basic OS commands; Windows and Linux fundamentals"]],
+["BCS-111",8,"Block 2 · Software and Operating Systems","Concepts of Programming Languages",["Meaning of programming languages","Machine language and assembly language","High-level languages","Generations of programming languages","Procedural programming","Object-oriented programming","Structured programming","Compiler, interpreter and assembler","Algorithms and flowcharts","Pseudocode","Variables, constants and data types","Operators and control structures"]],
+["BCS-111",9,"Block 2 · Software and Operating Systems","Computer Applications",["Applications in education","Business and commerce","Banking and finance","Healthcare and medicine","Science and research","Communication","Government services","Entertainment and multimedia","E-commerce and e-governance","Artificial intelligence applications","Database applications","Computers in everyday life"]],
+["BCS-111",10,"Block 3 · Networking and Web Applications","Networking and Internet",["Meaning and advantages of computer networks","PAN, LAN, MAN and WAN","Network topologies: bus, star, ring, mesh and tree","Modem, router, switch, hub, repeater and gateway","Wired and wireless networks","Client-server and peer-to-peer architecture","Internet and its history","Intranet and extranet","Protocols: TCP/IP, HTTP, HTTPS and FTP","IP addresses and domain names","DNS","WWW, email, VoIP and video conferencing"]],
+["BCS-111",11,"Block 3 · Networking and Web Applications","Web Applications I",["Introduction to the World Wide Web","Websites and webpages","Web browsers and search engines","URLs and hyperlinks","Web servers and web hosting","Static and dynamic websites","HTML fundamentals and basic structure","HTML elements and tags","Headings, paragraphs and lists","Hyperlinks and images","Tables and forms","Introduction to CSS"]],
+["BCS-111",12,"Block 3 · Networking and Web Applications","Web Applications II",["Introduction to web applications","Client-side and server-side technologies","Front-end and back-end concepts","Web scripting","JavaScript fundamentals","Database connectivity concepts","Dynamic web pages","Web-based services","E-commerce applications","Online communication and collaboration","Web security basics","Privacy and safe browsing"]],
+
+["BCS-012",1,"Block 1 · Algebra I","Determinants",["Meaning and definition of determinants","Determinants of order 1, 2 and 3","Evaluation of determinants","Properties of determinants","Minors and cofactors","Expansion of determinants","Singular and non-singular determinants","Applications of determinants","Solving linear equations using determinants"]],
+["BCS-012",2,"Block 1 · Algebra I","Matrices-I",["Introduction to matrices","Order and notation of matrices","Row, column, square and rectangular matrices","Zero, diagonal, scalar and identity matrices","Upper and lower triangular matrices","Equality of matrices","Addition and subtraction","Scalar multiplication","Matrix multiplication","Transpose of a matrix"]],
+["BCS-012",3,"Block 1 · Algebra I","Matrices-II",["Symmetric matrices","Skew-symmetric matrices","Inverse of a matrix","Adjoint of a matrix","Properties of matrix inverses","Elementary row operations","Elementary column operations","Rank of a matrix","Solving simultaneous linear equations using matrices","Consistency of linear equations"]],
+["BCS-012",4,"Block 1 · Algebra I","Mathematical Induction",["Principle of mathematical induction","Natural numbers and statements","Base case","Inductive hypothesis","Inductive step","Proving mathematical statements","Sum of natural numbers","Sum of squares and cubes","Divisibility problems","Inequality proofs using induction"]],
+["BCS-012",5,"Block 2 · Algebra II","Sequence and Series",["Meaning of sequences and series","Finite and infinite sequences","Arithmetic progression: common difference and nth term","Sum of n terms of an AP","Geometric progression: common ratio and nth term","Sum of n terms and sum to infinity of a GP","Harmonic progression","Arithmetic, geometric and harmonic means","Relationship between AM, GM and HM","Special series and sigma notation"]],
+["BCS-012",6,"Block 2 · Algebra II","Complex Numbers",["Introduction to complex numbers","Real and imaginary parts","Imaginary unit i","Equality of complex numbers","Addition and subtraction","Multiplication and division","Conjugate of a complex number","Modulus and argument","Properties of complex numbers","Polar form","Argand plane","Powers of i"]],
+["BCS-012",7,"Block 2 · Algebra II","Equations",["Introduction to equations","Linear equations","Quadratic equations","Roots of quadratic equations","Nature of roots","Discriminant","Relation between roots and coefficients","Formation of quadratic equations","Simultaneous linear equations","Polynomial equations","Basic methods of solving equations"]],
+["BCS-012",8,"Block 2 · Algebra II","Inequalities",["Meaning of inequalities","Properties of inequalities","Linear inequalities","Solving inequalities in one variable","Compound inequalities","Quadratic inequalities","Interval notation","Representation on the number line","Graphical representation of inequalities","Absolute-value inequalities"]],
+["BCS-012",9,"Block 3 · Calculus","Differential Calculus",["Introduction to limits","Concept of a function","Continuity of functions","Differentiability","Derivative from first principles","Standard derivatives","Power, sum and difference rules","Product, quotient and chain rules","Differentiation of trigonometric functions","Exponential and logarithmic functions","Higher-order derivatives","Implicit differentiation"]],
+["BCS-012",10,"Block 3 · Calculus","Simple Applications of Differential Calculus",["Rate of change","Tangents and normals","Increasing and decreasing functions","Maxima and minima","Local maximum and minimum","Critical points","First derivative test","Second derivative test","Approximation using derivatives","Basic optimisation problems"]],
+["BCS-012",11,"Block 3 · Calculus","Integration",["Introduction to integration","Indefinite integrals","Standard integration formulas","Basic rules of integration","Integration by substitution","Integration by parts","Integration using partial fractions","Integration of trigonometric functions","Definite integrals","Properties of definite integrals"]],
+["BCS-012",12,"Block 3 · Calculus","Applications of Integral Calculus",["Meaning and applications of integration","Area under a curve","Area between two curves","Definite integrals in geometrical applications","Basic applications to finding areas","Evaluation of areas using integration"]],
+["BCS-012",13,"Block 4 · Vectors and 3D Geometry","Vectors-I",["Scalars and vectors","Zero, unit, equal and negative vectors","Position vector","Representation of vectors","Magnitude and direction","Addition and subtraction of vectors","Scalar multiplication","Components of vectors","Unit vectors along coordinate axes","Direction ratios and direction cosines"]],
+["BCS-012",14,"Block 4 · Vectors and 3D Geometry","Vectors-II",["Dot product (scalar product)","Properties of dot product","Angle between two vectors","Applications of dot product","Cross product (vector product)","Properties of cross product","Geometrical interpretation of cross product","Area of parallelogram and triangle","Scalar triple product","Basic vector identities"]],
+["BCS-012",15,"Block 4 · Vectors and 3D Geometry","Three-Dimensional Geometry-I",["Three-dimensional coordinate system","Cartesian coordinates","Distance between two points","Section formula","Direction ratios","Direction cosines","Equation of a line in 3D","Different forms of equation of a line","Angle between two lines","Parallel and perpendicular lines","Basic 3D problems"]],
+["BCS-012",16,"Block 4 · Vectors and 3D Geometry","Linear Programming",["Introduction to linear programming","Objective function","Decision variables","Constraints","Non-negativity restrictions","Linear inequalities","Feasible region","Feasible and infeasible solutions","Bounded and unbounded regions","Corner-point method","Graphical solution of LPP","Maximisation and minimisation problems"]],
+
+["BEGLA-136",1,"Block 1 · Job Search and Preparation","Profiling Oneself for the Job",["Identifying personal strengths and weaknesses","Understanding interests, skills and qualifications","Matching personal profile with job requirements","Setting career goals","Self-assessment for employment"]],
+["BEGLA-136",2,"Block 1 · Job Search and Preparation","Searching for a Job",["Sources of job information","Online job portals and company websites","Networking and references","Newspapers and employment advertisements","Evaluating job opportunities"]],
+["BEGLA-136",3,"Block 1 · Job Search and Preparation","Responding to Job Advertisements",["Reading job advertisements","Understanding eligibility and requirements","Preparing an application","Writing an application email","Following application instructions"]],
+["BEGLA-136",4,"Block 1 · Job Search and Preparation","Preparing for the Job",["Understanding the workplace","Researching an organisation","Preparing documents for employment","Professional conduct before joining","Planning for the first day at work"]],
+["BEGLA-136",5,"Block 1 · Job Search and Preparation","Using Body Language Effectively",["Meaning and importance of body language","Facial expressions","Eye contact","Posture and gestures","Personal space and handshakes","Positive non-verbal communication"]],
+["BEGLA-136",6,"Block 1 · Job Search and Preparation","Portfolio Making",["Purpose of a professional portfolio","Selecting work samples","Organising portfolio content","Digital and physical portfolios","Updating a portfolio"]],
+["BEGLA-136",7,"Block 1 · Job Search and Preparation","Writing Your Curriculum Vitae (CV)",["Purpose and types of CV","CV structure and sections","Writing a career objective or profile","Presenting education and skills","Describing experience and achievements","CV formatting and proofreading"]],
+["BEGLA-136",8,"Block 1 · Job Search and Preparation","Preparing to Face an Interview",["Types of interviews","Researching the employer","Common interview questions","Answering clearly and confidently","Interview etiquette","Post-interview communication"]],
+["BEGLA-136",9,"Block 2 · Workplace Communication","Etiquette, Cultural Awareness and Gender Perceptions",["Workplace etiquette","Professional behaviour","Cultural differences at work","Respect and inclusion","Gender perceptions and sensitivity","Communication across cultures"]],
+["BEGLA-136",10,"Block 2 · Workplace Communication","Understanding Customers",["Who is a customer","Customer needs and expectations","Internal and external customers","Customer behaviour","Listening to customers","Building customer relationships"]],
+["BEGLA-136",11,"Block 2 · Workplace Communication","Essentials of Customer Service",["Meaning and importance of customer service","Customer service skills","Handling enquiries","Managing complaints","Resolving customer problems","Maintaining service quality"]],
+["BEGLA-136",12,"Block 2 · Workplace Communication","Work Ethics",["Meaning of work ethics","Professional responsibility","Honesty and integrity","Punctuality and discipline","Confidentiality","Teamwork and accountability"]],
+["BEGLA-136",13,"Block 3 · Speaking and Writing","Participating in Discussions",["Purpose and types of discussions","Preparing for a discussion","Expressing opinions clearly","Agreeing and disagreeing politely","Turn-taking and active listening","Summarising discussion points"]],
+["BEGLA-136",14,"Block 3 · Speaking and Writing","Making Presentations",["Purpose and types of presentations","Planning presentation content","Organising an effective presentation","Using visual aids","Voice modulation and body language","Handling questions"]],
+["BEGLA-136",15,"Block 3 · Speaking and Writing","Writing Business Letters",["Purpose and format of business letters","Enquiries and replies","Orders and acknowledgements","Complaints and adjustments","Letters of request","Clarity, tone and proofreading"]],
+["BEGLA-136",16,"Block 3 · Speaking and Writing","Writing Business Emails",["Purpose and structure of business emails","Writing clear subject lines","Professional tone and language","Email etiquette","Attachments and signatures","Replying, forwarding and proofreading"]],
+
+["BEVAE-181",1,"Block 1 · Environment and Ecosystems","Our Environment",["Meaning and components of environment","Biotic and abiotic components","Scope and importance of environmental studies","Human interaction with the environment","Environmental awareness"]],
+["BEVAE-181",2,"Block 1 · Environment and Ecosystems","Ecosystems",["Concept and structure of an ecosystem","Producers, consumers and decomposers","Food chains and food webs","Ecological pyramids","Energy flow in ecosystems","Ecological succession"]],
+["BEVAE-181",3,"Block 1 · Environment and Ecosystems","Major Ecosystems",["Terrestrial ecosystems","Forest ecosystem","Grassland ecosystem","Desert ecosystem","Aquatic ecosystems","Freshwater and marine ecosystems"]],
+["BEVAE-181",4,"Block 2 · Natural Resources","Land and Water Resources",["Land as a natural resource","Land degradation and soil erosion","Soil conservation","Water resources","Groundwater and surface water","Water scarcity and conservation"]],
+["BEVAE-181",5,"Block 2 · Natural Resources","Forest Resources",["Importance and uses of forests","Deforestation and its causes","Forest degradation","Forest conservation","Afforestation and social forestry","Community participation in forest protection"]],
+["BEVAE-181",6,"Block 2 · Natural Resources","Biodiversity: Value and Services",["Meaning and levels of biodiversity","Genetic, species and ecosystem diversity","Values of biodiversity","Ecosystem services","Biodiversity in India","Importance of biodiversity conservation"]],
+["BEVAE-181",7,"Block 2 · Natural Resources","Energy Resources",["Conventional energy resources","Coal, petroleum and natural gas","Renewable energy resources","Solar and wind energy","Hydropower and biomass","Energy conservation"]],
+["BEVAE-181",8,"Block 3 · Environmental Issues","Biodiversity: Threats and Conservation",["Major threats to biodiversity","Habitat loss and fragmentation","Overexploitation and invasive species","In-situ conservation","Ex-situ conservation","Protected areas and conservation programmes"]],
+["BEVAE-181",9,"Block 3 · Environmental Issues","Environmental Pollution and Hazards",["Meaning and types of pollution","Air pollution and its effects","Water pollution","Soil and noise pollution","Thermal and radioactive pollution","Natural and human-made hazards","Pollution prevention and control"]],
+["BEVAE-181",10,"Block 3 · Environmental Issues","Waste Management",["Types and sources of waste","Solid waste management","Segregation and collection","Reduce, reuse and recycle","Composting and waste treatment","Hazardous and biomedical waste","Sustainable waste practices"]],
+["BEVAE-181",11,"Block 3 · Environmental Issues","Global Environmental Issues",["Climate change and global warming","Ozone layer depletion","Acid rain","Loss of biodiversity","Desertification","International environmental concerns","Sustainable development"]],
+["BEVAE-181",12,"Block 4 · Society and Environment","Environmental Legislation",["Need for environmental laws","Major environmental laws in India","Environment (Protection) Act","Water and Air Acts","Wildlife Protection Act","Forest conservation legislation","Environmental institutions and enforcement"]],
+["BEVAE-181",13,"Block 4 · Society and Environment","Human Communities and Environment",["Human population and environment","Urbanisation and environmental pressure","Development and displacement","Environmental movements","Community participation","Traditional knowledge and conservation"]],
+["BEVAE-181",14,"Block 4 · Society and Environment","Environmental Ethics",["Meaning and principles of environmental ethics","Human-centred and nature-centred approaches","Environmental values and responsibility","Intergenerational equity","Individual and community action","Ethics and sustainable living"]]
+];
+
+const $ = s => document.querySelector(s);
+const KEY = "bca-command-center-progress-v2";
+let data = {topics:{},done:{}};
+
+try{
+ const saved = JSON.parse(localStorage.getItem(KEY));
+ if(saved && saved.topics && saved.done) data=saved;
+}catch(e){}
+
+let subject="all";
+
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({
+ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+}[c]));
+
+const key=u=>u[0]+"-"+u[1];
+const tk=(u,i)=>key(u)+"-"+i;
+
+function prog(u){
+ let n=u[4].filter((_,i)=>data.topics[tk(u,i)]).length;
+ return [n,u[4].length,Math.round(n/u[4].length*100)];
+}
+
+function complete(u){
+ return !!data.done[key(u)] || prog(u)[0]===u[4].length;
+}
+
+function toast(s){
+ const t=$("#toast");
+ t.textContent=s;
+ t.classList.add("show");
+ clearTimeout(window.tt);
+ window.tt=setTimeout(()=>t.classList.remove("show"),1500);
+}
+
+function save(){
+ localStorage.setItem(KEY,JSON.stringify(data));
+ stats();
+ toast("Progress saved on this device");
+}
+
+function stats(){
+ const subjects=["BCS-111","BCS-012","BEGLA-136","BEVAE-181"];
+ const totalTopics=U.reduce((a,u)=>a+u[4].length,0);
+ const checked=Object.values(data.topics).filter(Boolean).length;
+ const unitsDone=U.filter(complete).length;
+ const percentage=Math.round(checked/totalTopics*100);
+
+ $("#unitsDone").textContent=unitsDone+" / "+U.length;
+ $("#topicsDone").textContent=checked;
+ $("#overall").textContent=percentage+"%";
+ $("#ring").style.setProperty("--p",percentage+"%");
+
+ subjects.forEach(s=>{
+  const us=U.filter(u=>u[0]===s);
+  const n=us.filter(complete).length;
+  const v=Math.round(us.reduce((a,u)=>a+prog(u)[2],0)/us.length);
+  const suffix={
+   "BCS-111":"111","BCS-012":"012",
+   "BEGLA-136":"136","BEVAE-181":"181"
+  }[s];
+
+  $("#p"+suffix).textContent=v+"%";
+  $("#c"+suffix).textContent=n+" of "+us.length+" units completed";
+ });
+
+ $("#bars").innerHTML=subjects.map(s=>{
+  const us=U.filter(u=>u[0]===s);
+  const v=Math.round(us.reduce((a,u)=>a+prog(u)[2],0)/us.length);
+  return `<div class="pr">
+   <span>${s}</span>
+   <div class="track"><div class="fill" style="width:${v}%"></div></div>
+   <b>${v}%</b>
+  </div>`;
+ }).join("");
+
+ const days=Math.ceil(
+  (new Date(2026,11,12)-new Date(new Date().setHours(0,0,0,0)))/86400000
+ );
+
+ $("#days").textContent=Math.max(0,days);
+ $("#countdown").textContent=days>0?days+" days remaining":"Exam day reached";
+}
+
+function render(){
+ const q=$("#search").value.toLowerCase().trim();
+ const st=$("#status").value;
+ const so=$("#sort").value;
+
+ let list=U.filter(u=>
+  (subject==="all"||u[0]===subject) &&
+  (!q||[u[0],u[2],u[3],...u[4]].join(" ").toLowerCase().includes(q)) &&
+  (st==="all" ||
+   (st==="complete"&&complete(u)) ||
+   (st==="incomplete"&&!complete(u)))
+ );
+
+ if(so!=="default"){
+  list.sort((a,b)=>so==="progress"
+   ?prog(b)[2]-prog(a)[2]
+   :prog(a)[2]-prog(b)[2]);
+ }
+
+ $("#units").innerHTML=list.length
+ ?list.map(u=>{
+  const p=prog(u);
+  const d=complete(u);
+  const badge={
+   "BCS-111":"C",
+   "BCS-012":"M",
+   "BEGLA-136":"E",
+   "BEVAE-181":"V"
+  }[u[0]];
+
+  return `<details class="unit">
+   <summary>
+    <div class="un">${badge}${u[1]}</div>
+    <div class="ut">
+     <b>${esc(u[3])}</b>
+     <small>${esc(u[0])} · ${esc(u[2])} · ${u[4].length} subtopics</small>
+    </div>
+    <div class="um">${p[0]}/${p[1]} · ${d?"✓ Done":p[2]+"%"}</div>
+    <span class="arrow">⌄</span>
+   </summary>
+   <div class="ubody">
+    <div class="topics">
+     ${u[4].map((t,i)=>`
+      <label class="topic ${data.topics[tk(u,i)]?"checked":""}">
+       <input type="checkbox" data-t="${tk(u,i)}"
+       ${data.topics[tk(u,i)]?"checked":""}>
+       <span>${esc(t)}</span>
+      </label>
+     `).join("")}
+    </div>
+    <div class="ufoot">
+     <small>${p[0]} of ${p[1]} subtopics checked</small>
+     <button class="mark" data-u="${key(u)}">
+      ${d?"Mark in progress":"Mark unit complete"}
+     </button>
+    </div>
+   </div>
+  </details>`;
+ }).join("")
+ :'<div class="empty">No matching units. Try another search or filter.</div>';
+
+ $("#units").querySelectorAll("[data-t]").forEach(x=>{
+  x.addEventListener("change",e=>{
+   data.topics[e.target.dataset.t]=e.target.checked;
+   save();
+   render();
+  });
+ });
+
+ $("#units").querySelectorAll("[data-u]").forEach(x=>{
+  x.addEventListener("click",e=>{
+   const k=e.currentTarget.dataset.u;
+   const u=U.find(v=>key(v)===k);
+
+   if(complete(u)){
+    delete data.done[k];
+    u[4].forEach((_,i)=>delete data.topics[tk(u,i)]);
+   }else{
+    data.done[k]=true;
+    u[4].forEach((_,i)=>data.topics[tk(u,i)]=true);
+   }
+
+   save();
+   render();
+  });
+ });
+}
+
+$("#search").addEventListener("input",render);
+$("#status").addEventListener("change",render);
+$("#sort").addEventListener("change",render);
+
+document.querySelectorAll("[data-subject]").forEach(b=>{
+ b.addEventListener("click",()=>{
+  subject=b.dataset.subject;
+  document.querySelectorAll(".tab").forEach(t=>
+   t.classList.toggle("active",t===b)
+  );
+  render();
+ });
+});
+
+document.querySelectorAll("[data-filter]").forEach(b=>{
+ b.addEventListener("click",()=>{
+  subject=b.dataset.filter;
+  document.querySelectorAll(".tab").forEach(t=>
+   t.classList.toggle("active",t.dataset.subject===subject)
+  );
+  $("#syllabus").scrollIntoView({behavior:"smooth"});
+  render();
+ });
+});
+
+document.querySelectorAll("[data-go]").forEach(b=>{
+ b.addEventListener("click",()=>{
+  document.querySelectorAll(".nav button").forEach(x=>
+   x.classList.toggle("active",x===b)
+  );
+  $("#"+b.dataset.go).scrollIntoView({behavior:"smooth"});
+ });
+});
+
+$("[data-jump]").addEventListener("click",()=>
+ $("#syllabus").scrollIntoView({behavior:"smooth"})
+);
+
+let expanded=false;
+
+$("#expand").addEventListener("click",()=>{
+ expanded=!expanded;
+ document.querySelectorAll("#units details").forEach(d=>d.open=expanded);
+ $("#expand").textContent=expanded?"－ Collapse all":"＋ Expand all";
+});
+
+$("#reset").addEventListener("click",()=>
+ $("#modal").classList.add("show")
+);
+
+$("#cancel").addEventListener("click",()=>
+ $("#modal").classList.remove("show")
+);
+
+$("#confirm").addEventListener("click",()=>{
+ data={topics:{},done:{}};
+ save();
+ render();
+ $("#modal").classList.remove("show");
+ toast("Progress reset");
+});
+
+$("#modal").addEventListener("click",e=>{
+ if(e.target.id==="modal")$("#modal").classList.remove("show");
+});
+
+stats();
+render();
+</script>
+</body>
+</html>
